@@ -1,0 +1,14 @@
+rtdetr:
+    onnx_file:     "../weights/rtdetr/rtdetr_hgnetv2_l_6x_coco.onnx"
+    engine_file:   "../weights/rtdetr/rtdetr_hgnetl.trt"
+    type:          "coco"
+    mode:          "fp32"
+    dynamic:       1
+    batchSize:     8
+    imageWidth:    640
+    imageHeight:   640
+    conf_thr:      0.5
+    num_queries:   300
+    imgScale:      255
+    imgMean:       [ 0, 0, 0 ]
+    imgStd:        [ 1, 1, 1 ]
